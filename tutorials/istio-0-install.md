@@ -13,9 +13,9 @@ Click the **Start** button to move to the next step.
 ## Setup Env
 start by setting some environment variables in the shell
 
-```bash
-export PROJECT_ID=<id of your project>
-export CLUSTER_NAME=<name of cluster>
+```
+export PROJECT_ID=<id>
+export CLUSTER_NAME=<name>
 ```
 
 Continue on to the next step
