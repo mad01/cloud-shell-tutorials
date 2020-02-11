@@ -18,7 +18,7 @@ export PROJECT_ID=<id>
 export CLUSTER_NAME=<name>
 ```
 
-Continue on to the next step
+Continue on to the **next** step
 
 
 ## Install istioctl
@@ -32,7 +32,7 @@ echo "export PATH=$PATH:$HOME/.istioctl/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Continue on to the next step
+Continue on to the **next** step
 
 
 ## Create GKE cluster
@@ -53,7 +53,7 @@ gcloud beta container \
     --enable-autorepair
 ```
 
-Continue on to the next step
+Continue on to the **next** step
 
 
 ## Deploy Istio
@@ -83,7 +83,7 @@ kubectl create secret generic kiali \
     --from-literal "passphrase=admin"
 ```
 
-Continue on to the next step
+Continue on to the **next** step
 
 
 
@@ -93,3 +93,8 @@ Continue on to the next step
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
 
 You’re all set to start the upcomming istio guides!
+
+start the **next** tutorial istio basics
+```bash
+cloudshell launch-tutorial -d tutorials/istio-1-basics.md
+```
