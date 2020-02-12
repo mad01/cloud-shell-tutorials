@@ -38,6 +38,14 @@ kubectl config set-context "$(kubectl config current-context)" --namespace="${NS
 
 export NAME=$(echo "${USER//_/-}")
 
+echo PROJECT_ID=$PROJECT_ID
+echo CLUSTER_NAME=$CLUSTER_NAME
+echo CLUSTER_REGION=$CLUSTER_REGION
+echo NAME=$NAME
+echo NS=$NS
+echo INGRESS_HOST=$INGRESS_HOST
+
+
 EOL
 ```
 
