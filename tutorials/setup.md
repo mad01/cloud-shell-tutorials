@@ -36,6 +36,8 @@ export INGRESS_HOST="$(kubectl -n istio-system get service istio-ingressgateway 
 export NS="${NS}"
 kubectl config set-context "$(kubectl config current-context)" --namespace="${NS}"
 
+export NAME=$(echo "${USER//_/-}")
+
 EOL
 ```
 

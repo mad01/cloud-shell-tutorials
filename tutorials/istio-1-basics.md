@@ -85,7 +85,7 @@ Continue on to the **next** step
 ## Try calling the nginx
 Lets try to call the istio service before we add it as a member in the mesh
 ```bash
-curl -v --header 'Host: $USER.example.com' $INGRESS_HOST/
+curl -v --header 'Host: $NAME.example.com' $INGRESS_HOST/
 ```
 
 spoiler it will fail 
@@ -99,7 +99,8 @@ first lets prep the virtual service with a unique name.
 we will just your username in the shell to make it easy.
 
 ```bash
-sed -i -e "s/{{USER}}/${USER}/g;" \
+
+sed -i -e "s/{{NAME}}/${NAME}/g;" \
     k8s/basics/vs.yaml
 ```
 
@@ -120,7 +121,7 @@ lets now try to call the service again when we have configured
 it to be a member of the isito mesh
 
 ```bash
-curl -v --header 'Host: $USER.example.com' $INGRESS_HOST/
+curl -v --header 'Host: $NAME.example.com' $INGRESS_HOST/
 ```
 
 Continue on to the **next** step
