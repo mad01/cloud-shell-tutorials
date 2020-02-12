@@ -57,6 +57,9 @@ curl -sL https://istio.io/downloadIstioctl | sh -
 
 ```bash
 echo "export PATH=$PATH:$HOME/.istioctl/bin" >> ~/.bashrc
+```
+
+```bash
 export PATH=$PATH:$HOME/.istioctl/bin
 ```
 

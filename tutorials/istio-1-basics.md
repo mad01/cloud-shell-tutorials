@@ -19,7 +19,7 @@ start that tutorial with the following command in cloud shell
 
 If all that is set you can go ahead and use that config
 ```bash
-. ./demo-configuration
+. ~/demo-configuration
 ```
 
 Continue on to the **next** to get started
