@@ -13,9 +13,10 @@ Click the **Start** button to move to the next step.
 start by setting the project id
 ```bash
 export PROJECT_ID=<id>
-export NS="${USER}-${RANDOM}"
 export CLUSTER_NAME=istio-demo
 export CLUSTER_REGION=europe-west1-b
+export NAME=$(echo "${USER//_/-}")
+export NS="${NAME}-${RANDOM}"
 ```
 
 now run the script to save the config for later 
