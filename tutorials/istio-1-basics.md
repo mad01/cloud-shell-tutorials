@@ -33,16 +33,16 @@ member of the istio mesh
 
 lets first create the namespace for the tutorial
 ```bash
-kubectl create ns basics
+kubectl create ns $NS
 ```
 now lets add the label on the namespace
 ```bash
-kubectl label namespace basics istio-injection=enabled
+kubectl label namespace $NS istio-injection=enabled
 ```
 
 lets now set the current k8s context to the namespace basics
 ```bash
-kubectl config set-context "$(kubectl config current-context)" --namespace=basics
+kubectl config set-context "$(kubectl config current-context)" --namespace=$NS
 ```
 
 Continue on to the **next** step
@@ -60,7 +60,7 @@ cat k8s/basics/deploy.yaml
 
 now lets deploy this to the cluster
 ```bash
-kubectl apply -f k8s/basics/deploy.yaml
+kubectl apply -f k8s/basics/deploy.yaml -n $NS
 ```
 
 Continue on to the **next** step
@@ -75,7 +75,7 @@ cat k8s/basics/gw.yaml
 ```
 now lets apply it
 ```bash
-kubectl apply -f k8s/basics/gw.yaml
+kubectl apply -f k8s/basics/gw.yaml -n $NS
 ```
 
 Continue on to the **next** step
@@ -102,7 +102,7 @@ cat k8s/basics/vs.yaml
 ```
 now lets apply it
 ```bash
-kubectl apply -f k8s/basics/vs.yaml
+kubectl apply -f k8s/basics/vs.yaml -n $NS
 ```
 
 Continue on to the **next** step
@@ -123,7 +123,11 @@ Continue on to the **next** step
 We are now done with the current tutorial so lets cleanup
 
 ```bash
-kubectl delete ns basics
+kubectl delete ns $NS
+```
+
+```bash
+git checkout .
 ```
 
 Continue on to the **next** step
