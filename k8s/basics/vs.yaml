@@ -5,7 +5,7 @@ metadata:
   name: frontend
 spec:
   hosts:
-  - "{{NAME}}.example.com"
+  - "NAME.example.com"
   gateways:
   - gateway
   http:

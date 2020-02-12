@@ -100,7 +100,7 @@ we will just your username in the shell to make it easy.
 
 ```bash
 
-sed -i -e "s/{{NAME}}/${NAME}/g;" \
+sed -i -e "s/NAME/${NAME}/g;" \
     k8s/basics/vs.yaml
 ```
 
