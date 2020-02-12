@@ -10,22 +10,17 @@ Click the **Start** button to move to the next step.
 
 
 ## Setup Env
-start by setting some environment variables in the shell
+start by setting some environment variables in the shell from the 
+config we created in the setup step. If you haven't done this yet 
+start that tutorial with the following command in cloud shell
+`cloudshell launch-tutorial -d tutorials/setup.md`
 
+If all that is set you can go ahead and use that config
+```bash
+. ./demo-configuration
 ```
-#!/usr/bin/env bash
 
-  cat > ~/demo-configuration <<EOL
-
-export PROJECT_ID=$PROJECT_ID
-export CLUSTER_NAME=istio-demo
-export CLUSTER_REGION=europe-west1-b
-
-gcloud config set project $PROJECT_ID
-export INGRESS_HOST="$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')"; echo "$INGRESS_HOST"
-
-EOL
-```
+Continue on to the **next** to get started
 
 
 ## Name of step
