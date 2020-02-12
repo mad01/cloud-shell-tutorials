@@ -6,6 +6,10 @@
 development environment managing resources hosted on Google Cloud Platform.
 
 
+### Setup Tutorial
+Before starting any of the other tutorials do this one. This saves a config and sets you up
+* [Setup Tutorial](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/mad01/cloud-shell-tutorials.git&tutorial=tutorials/setup.md)
+
 ### Istio
 * [Open Istio Install Tutorial](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/mad01/cloud-shell-tutorials.git&tutorial=tutorials/istio-0-install.md)
 * [Open Istio Basics Tutorial](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/mad01/cloud-shell-tutorials.git&tutorial=tutorials/istio-1-basics.md)

@@ -11,6 +11,15 @@ a member of the istio mesh, and calling it using the default istio edge proxy
 Click the **Start** button to move to the next step.
 
 
+## Setup Env
+start by setting some environment variables in the shell
+
+```
+export PROJECT_ID=<id>
+export CLUSTER_NAME=<name>
+```
+
+
 ## Get GKE cluster credential and ingress IP
 The assumption is that you still have `PROJECT_ID` and `CLUSTER_NAME` env from the
 itio install step, and that you have a gke cluster with istio installed like in the 
