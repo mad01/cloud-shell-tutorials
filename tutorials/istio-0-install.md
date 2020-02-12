@@ -10,30 +10,6 @@ This guide will take you through setting up a GKE cluster and installing istio f
 Click the **Start** button to move to the next step.
 
 
-## Setup Env
-start by setting some environment variables in the shell
-
-```
-export PROJECT_ID=<id>
-export CLUSTER_NAME=<name>
-```
-
-Continue on to the **next** step
-
-
-## Install istioctl
-
-```bash
-curl -sL https://istio.io/downloadIstioctl | sh -
-```
-
-```bash
-echo "export PATH=$PATH:$HOME/.istioctl/bin" >> ~/.bashrc
-source ~/.bashrc
-```
-
-Continue on to the **next** step
-
 
 ## Create GKE cluster
 

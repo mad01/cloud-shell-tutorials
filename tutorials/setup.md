@@ -46,6 +46,18 @@ EOL
 . ~/demo-configuration
 ```
 
+
+## Install istioctl
+
+```bash
+curl -sL https://istio.io/downloadIstioctl | sh -
+```
+
+```bash
+echo "export PATH=$PATH:$HOME/.istioctl/bin" >> ~/.bashrc
+export PATH=$PATH:$HOME/.istioctl/bin
+```
+
 Continue on to the **next** step
 
 
