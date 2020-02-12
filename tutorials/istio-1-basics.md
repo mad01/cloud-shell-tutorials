@@ -63,6 +63,10 @@ now lets deploy this to the cluster
 kubectl apply -f k8s/basics/deploy.yaml -n $NS
 ```
 
+```bash
+kubectl get po
+```
+
 Continue on to the **next** step
 
 
