@@ -135,12 +135,13 @@ Continue on to the **next** step
 We are now done with the current tutorial so lets cleanup
 
 ```bash
-kubectl delete ns $NS
+git checkout .
 ```
 
 ```bash
-git checkout .
+kubectl delete ns $NS
 ```
+
 
 Continue on to the **next** step
 

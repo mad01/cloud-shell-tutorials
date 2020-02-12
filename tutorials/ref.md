@@ -23,9 +23,31 @@ If all that is set you can go ahead and use that config
 Continue on to the **next** to get started
 
 
-## Name of step
+
+
+## Name of step 1
 Continue on to the **next** step
 
+## Name of step 2
+Continue on to the **next** step
+
+## Name of step 3
+Continue on to the **next** step
+
+
+
+
+
+## Cleanup
+We are now done with the current tutorial so lets cleanup
+
+```bash
+git checkout .
+```
+
+```bash
+kubectl delete ns $NS
+```
 
 
 ## Congratulations
