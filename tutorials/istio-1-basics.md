@@ -89,7 +89,7 @@ Continue on to the **next** step
 ## Try calling the nginx
 Lets try to call the istio service before we add it as a member in the mesh
 ```bash
-curl -v --header 'Host: $NAME.example.com' $INGRESS_HOST/
+curl -v --header "Host: $NAME.example.com" $INGRESS_HOST/
 ```
 
 spoiler it will fail 
@@ -125,7 +125,7 @@ lets now try to call the service again when we have configured
 it to be a member of the isito mesh
 
 ```bash
-curl -v --header 'Host: $NAME.example.com' $INGRESS_HOST/
+curl -v --header "Host: $NAME.example.com" $INGRESS_HOST/
 ```
 
 Continue on to the **next** step
